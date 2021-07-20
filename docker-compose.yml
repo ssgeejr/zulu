@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+    zuludb:
+        image: mysql:5.6
+        container_name: zuludb
+        environment:
+            MYSQL_DATABASE: 'zulu'
+            MYSQL_USER: 'zulu'
+            MYSQL_PASSWORD: 'silverlining'
+            MYSQL_ROOT_PASSWORD: 'threeblindmice'
+        volumes:
+            - ./mysql:/docker-entrypoint-initdb.d/:ro
+            - /opt/apps/zuludb:/var/lib/mysql
+        ports:
+            - 3316:3306

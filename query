@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec -ti zuludb mysql -pthreeblindmice zulu -e "LOAD DATA LOCAL INFILE '/tmp/assessment.csv'  INTO TABLE review  FIELDS TERMINATED BY ','  ENCLOSED BY '"' LINES TERMINATED BY '\n';"

@@ -1,0 +1,14 @@
+SET GLOBAL time_zone = 'America/Chicago';
+
+CREATE TABLE review(
+	reviewid INT NOT NULL AUTO_INCREMENT,
+	category	VARCHAR(24),
+	section	VARCHAR(47) NOT NULL,
+	risk	VARCHAR(145) NOT NULL,
+	rcmd	VARCHAR(166) NOT NULL DEFAULT '',
+	notes	VARCHAR(405) NOT NULL DEFAULT '',
+	party	VARCHAR(27) NOT NULL DEFAULT '',
+	state	VARCHAR(25) NOT NULL DEFAULT '',
+	status	VARCHAR(183) NOT NULL DEFAULT '',
+	PRIMARY KEY (reviewid)
+);
