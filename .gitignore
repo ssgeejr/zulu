@@ -1,3 +1,9 @@
+# any data files
+*.csv
+*.xls
+*.xlsx
+
+
 # Compiled class file
 *.class
 
